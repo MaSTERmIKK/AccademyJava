@@ -1,32 +1,31 @@
-package lezione.giorno.uno.esercizio.quattro;
+package lezione.giorno.uno.esercizio.sei;
 
 public class Main {
-	 public static void main( String[] args ) {
-		 Oggetto oggetto = new Oggetto();
-		 oggetto.setNome("test");
-		Costruttore costruttoreInt=new Costruttore(1);
-		Costruttore costruttoreString=new Costruttore("Stringa");
-		Costruttore costruttoreBoolean=new Costruttore(true);
-		Costruttore costruttoreObject=new Costruttore(oggetto);
+
+	public static void main(String[] args) {
+		Persona persona= new Persona();
+		Studente studente=new Studente();
 		
-		costruttoreInt.setMyvariableInt(1);
+		persona.setNome("Pippo");
+		persona.setCognome("Rossi");
+		persona.setEta("30");
 		
-		System.out.println(costruttoreInt.getMyvariableInt());
+		System.out.println(persona.getNome());
+		System.out.println(persona.getCognome());
+		System.out.println(persona.getEta());
 		
-		costruttoreString.setMyvariableString("Stringa");
+		studente.setNome("Pluto");
+		studente.setCognome("Verdi");
+		studente.setEta("32");
+		studente.setMatricola("AA1049710");
+		studente.getNomeDipartimento();
 		
-		System.out.println(costruttoreString.getMyvariableString());
-		
-		costruttoreBoolean.setMyvariableIBoolean(true);
-		
-		System.out.println(costruttoreBoolean.isMyvariableIBoolean());
-		
-		costruttoreObject.setMyvariableObject(oggetto);
-	
-		
-		
-		
-	
-	 }
+		System.out.println(studente.getNome());
+		System.out.println(studente.getCognome());
+		System.out.println(studente.getEta());
+		System.out.println(studente.getMatricola());
+		System.out.println(studente.getNomeDipartimento());
+
+	}
 
 }
