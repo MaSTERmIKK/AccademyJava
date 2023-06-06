@@ -1,19 +1,24 @@
-package lesson.two;
+package corsojavalabda;
 
 public class Auto extends Veicolo{
 
 	public Auto(String marca, String modello, int annoProduzione) {
 		super(marca, modello, annoProduzione);
+		
 	}
 
 	@Override
 	void accelerare() {
-		System.out.print(" Auto accellera ");
+		
+		System.out.println("Accellera auto");
+
 	}
 
 	@Override
 	void frenare() {
-		System.out.print(" Auto frena ");
+		
+		System.out.println("Frena auto");
+
 	}
 
 }
