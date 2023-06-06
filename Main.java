@@ -1,31 +1,43 @@
-package lezione.giorno.uno.esercizio.sei;
+package lezione.giorno.uno.esercizio.otto;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Persona persona= new Persona();
-		Studente studente=new Studente();
+		MicrofonoCondensatore microfonoCondensatore= new MicrofonoCondensatore();
+		MicrofonoDinamico microfonoDinamico= new MicrofonoDinamico();
+		MicrofonoNastro microfonoNastro= new MicrofonoNastro();
 		
-		persona.setNome("Pippo");
-		persona.setCognome("Rossi");
-		persona.setEta("30");
 		
-		System.out.println(persona.getNome());
-		System.out.println(persona.getCognome());
-		System.out.println(persona.getEta());
+		System.out.println("MICROFONO CONDENSATORE");
+		String microfonoCondensatoredett = microfonoCondensatore.registraAudio();
+		String attivaMic=microfonoCondensatore.attivaMicrofono();
+		String disattivaMic=microfonoCondensatore.disattivaMicrofono();
+		String mostradett=microfonoCondensatore.mostraDettagli();
+		System.out.println(microfonoCondensatoredett);
+		System.out.println(attivaMic);
+		System.out.println(disattivaMic);
+		System.out.println(mostradett);
 		
-		studente.setNome("Pluto");
-		studente.setCognome("Verdi");
-		studente.setEta("32");
-		studente.setMatricola("AA1049710");
-		studente.getNomeDipartimento();
+		System.out.println("MICROFONO DINAMICO");
+		String microfonoDinamicodett = microfonoDinamico.registraAudio();
+		String attivaMicDin=microfonoDinamico.attivaMicrofono();
+		String disattivaMicDin=microfonoDinamico.disattivaMicrofono();
+		String mostradettDin=microfonoDinamico.mostraDettagli();
+		System.out.println(microfonoDinamicodett);
+		System.out.println(attivaMicDin);
+		System.out.println(disattivaMicDin);
+		System.out.println(mostradettDin);
 		
-		System.out.println(studente.getNome());
-		System.out.println(studente.getCognome());
-		System.out.println(studente.getEta());
-		System.out.println(studente.getMatricola());
-		System.out.println(studente.getNomeDipartimento());
-
+		System.out.println("MICROFONO CONDENSATORE");
+		String microfonoNastrodett = microfonoNastro.registraAudio();
+		String attivaMicNas=microfonoNastro.attivaMicrofono();
+		String disattivaMicNas=microfonoNastro.disattivaMicrofono();
+		String mostradettNas=microfonoNastro.mostraDettagli();
+		System.out.println(microfonoNastrodett);
+		System.out.println(attivaMicNas);
+		System.out.println(disattivaMicNas);
+		System.out.println(mostradettNas);
+		
 	}
 
 }
