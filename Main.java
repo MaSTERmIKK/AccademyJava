@@ -1,14 +1,11 @@
-package lezione.giorno.due.esercizio.uno;
+package lezione.giorno.due.esercizio.inner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		//istanzio la classe
-		Enumerzaione enumerzaione= new Enumerzaione();
-		
-		//richiamo il metodo ciclo della classe Enumerazione
-		enumerzaione.ciclo();
+		OuterClass outerClass= new OuterClass();
 
+		outerClass.inner.innerMethod();;
 	}
 
 }
